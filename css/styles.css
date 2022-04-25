@@ -1,0 +1,17 @@
+/* Hoja de estilos */
+.header-img{
+  width: 20rem;
+  height: 20rem;  
+}
+
+.nav-img{
+  width: 5rem;
+  height: 5rem;  
+}
+
+.footer{
+  background: url("../img/peeking into frame with neutral face.png") right no-repeat,
+  url("../img/footer_trap door.png") left no-repeat;
+  background-size:contain;
+  background-color: rgb(56, 56, 56);
+}
