@@ -1,4 +1,25 @@
 /* Hoja de estilos */
+* {
+  box-sizing: border-box;
+}
+
+body{
+  /* margin: 0; */
+  background-image: url(../img/creepy\ blinds\ .png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 60px;
+}
+
 .header-img{
   width: 20rem;
   height: 20rem;  
@@ -9,6 +30,9 @@
   height: 5rem;  
 }
 
+.portfolio{
+  background-color: black;
+}
 .footer{
   background: url("../img/peeking into frame with neutral face.png") right no-repeat,
   url("../img/footer_trap door.png") left no-repeat;
