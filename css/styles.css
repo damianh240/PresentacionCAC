@@ -1,6 +1,7 @@
 /* Hoja de estilos */
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 
 body{
@@ -31,8 +32,49 @@ body{
 }
 
 .portfolio{
-  background-color: black;
+  background-color: #292b2c;
 }
+
+.portfolio-item {
+  position: relative;
+  width: 100%;
+}
+
+.portfolio-item figure {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.portfolio-item:hover .image {
+  opacity: 0.1;
+}
+
+.portfolio-item:hover .middle {
+  opacity: 1;
+}
+
+.portfolio-item .text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 .footer{
   background: url("../img/peeking into frame with neutral face.png") right no-repeat,
   url("../img/footer_trap door.png") left no-repeat;
