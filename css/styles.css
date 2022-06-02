@@ -117,8 +117,14 @@ body{
 }
 
 .footer{
-  background: url("../img/peeking into frame with neutral face.png") right no-repeat,
-  url("../img/footer_trap door.png") left no-repeat;
+  background: url("../img/peeking into frame with neutral face.png") right bottom no-repeat,
+  url("../img/footer_trap door.png") left bottom no-repeat;
   background-size:contain;
   background-color: rgb(56, 56, 56);
+}
+
+@media screen and (max-width: 1000px) {
+  .footer{
+    background-size: 35%;
+  }
 }
